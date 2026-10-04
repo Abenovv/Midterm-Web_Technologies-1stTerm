@@ -1,0 +1,46 @@
+.catalog-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter-button {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  min-height: 44px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.filter-button[aria-pressed=true] {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #191c20;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+.game-platform {
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+@media (max-width: 575px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .filter-button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
