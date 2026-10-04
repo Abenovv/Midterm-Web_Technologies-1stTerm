@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SIDEQUEST student game studio website: Community. IT-2511, Web Technologies 1.">
+    <meta name="theme-color" content="#151615">
+    <title>
+      Community | SIDEQUEST
+    </title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/dm-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/community.css">
+    <script src="assets/vendor/bootstrap.bundle.min.js" defer>
+    </script>
+    <script src="js/site.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="SIDEQUEST home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M12 2h8v10h10v8H20v10h-8V20H2v-8h10z" fill="currentColor"/>
+          </svg>
+          <span>
+            SIDEQUEST
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html">
+                Our games
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html" aria-current="page">
+                Community
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="studio.html">
+                The studio
+              </a>
+            </li>
+          </ul>
+          <a class="nav-cta" href="community.html#playtest">
+            Playtest preferences
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="shell page-top" aria-labelledby="community-title">
+        <h1 id="community-title">
+          Our community
+        </h1>
+        <p class="intro">
+          We would like to bring together people who enjoy games. This page introduces our plans for playtests and student meetups.
+        </p>
+      </section>
+      <section class="shell community-values" aria-label="Community activities">
+        <article>
+          <h2>
+            Try our ideas
+          </h2>
+          <p>
+            Help us choose which game concept to develop first.
+          </p>
+        </article>
+        <article>
+          <h2>
+            Share feedback
+          </h2>
+          <p>
+            Tell us what you like and what could be improved.
+          </p>
+        </article>
+        <article>
+          <h2>
+            Meet other players
+          </h2>
+          <p>
+            Join a student meetup when the first event is ready.
+          </p>
+        </article>
+      </section>
+      <section class="info-section section-pad" id="playtest" aria-labelledby="playtest-title">
+        <div class="shell playtest-layout">
+          <div>
+            <h2 id="playtest-title">
+              Playtest preferences
+            </h2>
+            <p>
+              Choose a game and the way you would like to join a future playtest.
+            </p>
+            <p>
+              This form saves your choices only in this browser. It does not send them to us or book a place.
+            </p>
+            <p>
+              We will add event dates when there is a playable version to test.
+            </p>
+          </div>
+          <form class="playtest-form" id="playtest-form">
+            <div class="mb-3">
+              <label class="form-label" for="player-name">
+                What should we call you?
+              </label>
+              <input class="form-control" id="player-name" name="name" type="text" autocomplete="given-name" placeholder="Your first name" required maxlength="60">
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label" for="player-game">
+                  Your first pick
+                </label>
+                <select class="form-select" id="player-game" name="game" required>
+                  <option value="">
+                    Choose a game
+                  </option>
+                  <option>
+                    Emberwake
+                  </option>
+                  <option>
+                    Orbit Post
+                  </option>
+                  <option>
+                    After Hours
+                  </option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="player-format">
+                  How would you join?
+                </label>
+                <select class="form-select" id="player-format" name="format">
+                  <option>
+                    Online
+                  </option>
+                  <option>
+                    In person
+                  </option>
+                  <option>
+                    Either works
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="player-message">
+                Your ideas
+                <span class="optional">
+                  (optional)
+                </span>
+              </label>
+              <textarea class="form-control" id="player-message" name="message" rows="3" maxlength="500" placeholder="What would you like to see in the game?">
+              </textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" id="save-consent" name="consent" type="checkbox" required>
+              <label class="form-check-label" for="save-consent">
+                I'm happy to save these choices in this browser.
+              </label>
+            </div>
+            <button class="button" type="submit">
+              Save my preferences
+            </button>
+            <p class="form-note">
+              No email collected. No booking made.
+            </p>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite">
+            </p>
+          </form>
+        </div>
+      </section>
+      <div class="shell saved-note" id="saved-preferences" hidden>
+        <div>
+          <strong>
+            Your saved preferences
+          </strong>
+          <br>
+          <span id="saved-summary">
+          </span>
+        </div>
+        <button class="clear-preferences" type="button" id="clear-preferences">
+          Clear saved choices
+        </button>
+      </div>
+      <section class="shell section-pad" aria-labelledby="meetup-title">
+        <h2 id="meetup-title">
+          Meetup plans
+        </h2>
+        <p>
+          These are activities we would like to organise. Dates and locations still need to be confirmed.
+        </p>
+        <table class="table community-table">
+          <caption>
+            Planned activities. Registration is not open yet.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">
+                Activity
+              </th>
+              <th scope="col">
+                Format
+              </th>
+              <th scope="col">
+                Date
+              </th>
+              <th scope="col">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                First playtest
+              </th>
+              <td>
+                Online
+              </td>
+              <td>
+                Not set
+              </td>
+              <td>
+                Planned
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Student meetup
+              </th>
+              <td>
+                In person
+              </td>
+              <td>
+                Not set
+              </td>
+              <td>
+                Planned
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Development Q
+                &amp;
+                A
+              </th>
+              <td>
+                Online
+              </td>
+              <td>
+                Not set
+              </td>
+              <td>
+                Idea
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="button" href="https://github.com/Abenovv/Midterm-Web_Technologies-1stTerm" target="_blank" rel="noopener noreferrer">
+          Follow the project on GitHub
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html">
+              <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M12 2h8v10h10v8H20v10h-8V20H2v-8h10z" fill="currentColor"/>
+              </svg>
+              <span>
+                SIDEQUEST
+              </span>
+            </a>
+            <p class="footer-description">
+              A student game development project.
+              <br>
+              IT-2511 · Web Technologies 1
+            </p>
+          </div>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="games.html">
+              Our games
+            </a>
+            <a href="community.html">
+              Community
+            </a>
+            <a href="studio.html">
+              The studio
+            </a>
+            <a href="https://github.com/Abenovv/Midterm-Web_Technologies-1stTerm" target="_blank" rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>
+            © 2026 SIDEQUEST · A student game studio concept.
+          </span>
+          <span>
+            4 October 2026
+            <span aria-hidden="true">
+              /
+            </span>
+            <a href="studio.html#credits">
+              Asset credits
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
